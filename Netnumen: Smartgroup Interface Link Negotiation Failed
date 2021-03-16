@@ -1,0 +1,153 @@
+show lacp internal 
+show running-config-interface xgei-Xx/Xx/Xx   
+show interface brief 
+
+
+
+////////////////////////
+EJEMPLO COMANDOS CLI, PARA ALARMA: Smartgroup Interface Link Negotiation Failed
+////////////////////////
+
+ZAC-CUN.VILL-B1-C600#show lacp internal 
+Smartgroup:1
+Flags:              * - Port is Active member Port
+                    S - Port is requested in Slow LACPDUs
+                    F - Port is requested in Fast LACPDUs   
+                    A - Port is in Active mode             
+                    P - Port is in Passive mode      
+Actor               Agg      LACPDUs  Port  Oper   Port  RX            Mux
+Port[Flags]         State    Interval Pri   Key    State Machine       Machine
+--------------------------------------------------------------------------------
+xgei-1/11/1[FA*]    ACTIVE   30       32768 0x111  0x3d  CURRENT       COLL&DIST
+xgei-1/11/2[ A ]    INACTIVE 30       32768 0x100  0x45  PORT_DISABLED DETACHED
+xgei-1/10/2[ A ]    INACTIVE 30       32768 0x100  0x45  PORT_DISABLED DETACHED
+
+
+ZAC-CUN.VILL-B1-C600#show running-config-interface xgei-1/10/2                                                                     
+!<if-intf>
+interface xgei-1/10/2
+  no shutdown
+$
+!</if-intf>
+!<lacp>
+lacp
+  interface xgei-1/10/2
+    smartgroup 1 mode active
+  $
+$
+!</lacp>
+!<MSAN>
+interface xgei-1/10/2
+  switchport mode trunk
+  switchport vlan 401,1100,1300-1301 tag
+  switchport vlan 1400,1900 tag
+$
+!</MSAN>
+ZAC-CUN.VILL-B1-C600#show running-config-interface xgei-1/11/2                                                                     
+!<if-intf>
+interface xgei-1/11/2
+  no shutdown
+$
+!</if-intf>
+!<lacp>
+lacp
+  interface xgei-1/11/2
+    smartgroup 1 mode active
+  $
+$
+!</lacp>
+!<MSAN>
+interface xgei-1/11/2
+  switchport mode trunk
+  switchport vlan 401,1100,1300-1301 tag
+  switchport vlan 1400,1900 tag
+$
+!</MSAN>
+ZAC-CUN.VILL-B1-C600#show running-config-interface xgei-1/11/1
+!<if-intf>
+interface xgei-1/11/1
+  description "TRK NGWTOBERIN GE9/0/21(10G) - TXRE050 (25-126 1/8)"
+  no shutdown
+$
+!</if-intf>
+!<port-physical-config>
+interface xgei-1/11/1
+  speed speed-1G
+$
+!</port-physical-config>
+!<lacp>
+lacp
+  interface xgei-1/11/1
+    smartgroup 1 mode active
+  $
+$
+!</lacp>
+!<MSAN>
+interface xgei-1/11/1
+  switchport mode trunk
+  switchport vlan 401,1100,1300-1301 tag
+  switchport vlan 1400,1900 tag
+$
+!</MSAN>
+ZAC-CUN.VILL-B1-C600#
+
+
+ZAC-CUN.VILL-B1-C600#show interface brief 
+Interface      Portattribute  Mode  BW(Mbps)  Admin Phy   Prot  Description 
+xgei-1/10/1    optical    Duplex/full  1000   up    up    up    "TRK NGWTOBERIN 
+                                                                GE9/0/21(10G) - 
+                                                                TXRE050 (25-126 
+                                                                1/7)"
+xgei-1/10/2    optical    Duplex/full  10000  up    down  down  
+xgei-1/10/3    optical    Duplex/full  10000  down  down  down  
+xgei-1/10/4    optical    Duplex/full  10000  down  down  down  
+xgei-1/11/1    optical    Duplex/full  1000   up    up    up    "TRK NGWTOBERIN 
+                                                                GE9/0/21(10G) - 
+                                                                TXRE050 (25-126 
+                                                                1/8)"
+xgei-1/11/2    optical    Duplex/full  10000  up    down  down  
+xgei-1/11/3    optical    Duplex/full  10000  down  down  down  
+xgei-1/11/4    optical    Duplex/full  10000  down  down  down  
+smartgroup1    N/A        N/A          1000   up    up    up    
+ZAC-CUN.VILL-B1-C600#
+
+////////////////////////////////////////
+ALARMA EN NETNUMEN 
+////////////////////////////////////////
+
+ACK State Unacknowledged
+Severity  Critical
+NE  ZAC-CUN.VILL-B1-C600
+Location  RACK=1,SHELF=1,SLOT=10,PORT=2
+Alarm Code  Smartgroup Interface Link Negotiation Failed(50901)
+Raised Time  2021-03-15 20:12:40
+System Type  C600 System Type(775)
+NE Type  C600
+Alarm Type  Communications Alarm
+Specific Problem  Smartgroup Interface Link Negotiation Failed
+Remark  Smartgroup ID=1,Smartgroup Interface Name=xgei-1/10/2,Negotiation Status=Active
+Repeated Count  
+ADMC Alarm  No
+Product  
+Alarm AID  271913
+Additional NE  
+Additional Location  
+Changed Time  
+Additional Information  
+(Un)ACK User ID  
+(Un)ACK System ID  
+(Un)ACK Time  
+(Un)ACK Information  
+Comment  
+Comment User ID  
+Comment System ID  
+Comment Time  
+Alarm ID  1606367148700
+NE IP  172.30.61.29
+Link  
+NE Group  FTTX
+NE Agent  
+Related Service(s)  
+Threshold Information  
+Maintenance State  
+Raised Logging Time  2021-03-15 20:19:54
