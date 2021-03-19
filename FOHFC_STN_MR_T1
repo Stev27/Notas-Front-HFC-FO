@@ -1,0 +1,44 @@
+FOHFC: MR_T1: Control de calidad                   
+FOHFC: (STN)
+
+FOHFC: MR_T1: Diagnostico               
+FOHFC: (STN)    
+
+Se escala a Tratamiento.
+
+
+=FOHFC,=FRONTCCI
+
+
+((exists (select 1 from synonymdomain where domainid='INCIDENTSTATUS'and maxvalue not in ('CLOSED','RESOLVED','HISTEDIT','RESUELTO') and status=synonymdomain.value) and exists (select 1 from multiassetlocci where recordkey=incident.ticketid and  
+exists (select 1 from ci where ((upper(ciname) like 'UND%')) and (multiassetlocci.cinum=cinum)))) or ((location like 'UND%'))) and (((status = 'INPROG' or status = 'PENDIENTE' or status = 'ABIERTO' or status = 'ASIGNADO')))  
+
+FOHFC: MR_T1: Sin Retorno / Nodo ***	
+FOHFC: MR_T1: Sin Forward / Nodo ***	
+FOHFC: MR_T1: Atenuación en Retorno	
+FOHFC: MR_T1: Atenuación en Forward	
+FOHFC: MR_T1: Aumento de Temperatura	
+FOHFC: MR_T1: Caida de Enlaces Principales	
+FOHFC: MR_T1: Caida de Enlaces BackUp	
+FOHFC: MR_T1: Atenuación de Enlaces Principales	
+FOHFC: MR_T1: Atenuación de Enlaces BackUp	
+FOHFC: MR_T1: Perdida de Comunicación **Sin afectación**	
+FOHFC: MR_T1: Falla Chasis	
+FOHFC: MR_T1: Desenganche de Transponder **Sin afectación**	
+FOHFC: MR_T1: Sobrepotencia en Forward / Nodo ***	
+FOHFC: MR_T1: Transmisor RF / Nodo **	
+
+FOHFC: MR_T1: Diagnostico
+FOHFC: MR_T1: Apertura
+FOHFC: MR_T1: Energia
+FOHFC: MR_T1: Reporte a FO
+FOHFC: MR_T1: Validacion NOC
+FOHFC: MR_T1: Devolucion
+FOHFC: MR_T1: S1+
+FOHFC: MR_T1: Error de creacion
+FOHFC: MR_T1: Duplicado
+FOHFC: MR_T1: Control de calidad
+
+
+FOHFC: MR_T1: Energia
+FOHFC: (STN)
