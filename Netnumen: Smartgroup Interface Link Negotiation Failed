@@ -6,6 +6,10 @@ show interface brief
 
 ////////////////////////
 EJEMPLO COMANDOS CLI, PARA ALARMA: Smartgroup Interface Link Negotiation Failed
+
+/////////////////////////
+se debe revisar que los tres parametros Admin Phy Prot, esten en UP, y que tenga algo en descripcion "TRK NGWTOBERIN GE9/0/21(10G) TXRE050 (25-126 1/7)"
+de lo contrario la Ten giga no esta en operacion. 
 ////////////////////////
 
 ZAC-CUN.VILL-B1-C600#show lacp internal 
