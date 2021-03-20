@@ -10,6 +10,10 @@ Se escala a Tratamiento.
 =FOHFC,=FRONTCCI
 
 
+DailyNodes ***********************************************************************************************************
+https://claromovilco-my.sharepoint.com/personal/giovanny_reuto_claro_com_co/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9jbGFyb21vdmlsY28tbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvZ2lvdmFubnlfcmV1dG9fY2xhcm9fY29tX2NvL0VySTkzTnNNdWtWUGlCNjNQYnRGbkJRQmN3THVfdFBPekRsN3BFMDhyQ0tJVlE_cnRpbWU9Ylg1MHV4T0EyRWc&id=%2Fpersonal%2Fgiovanny_reuto_claro_com_co%2FDocuments%2FSeguimiento%20Ruido%20Back%20Office%20Alambrico%2FReporte%20Diario%20Ruido
+********************************************************************************************************************
+
 ((exists (select 1 from synonymdomain where domainid='INCIDENTSTATUS'and maxvalue not in ('CLOSED','RESOLVED','HISTEDIT','RESUELTO') and status=synonymdomain.value) and exists (select 1 from multiassetlocci where recordkey=incident.ticketid and  
 exists (select 1 from ci where ((upper(ciname) like 'UND%')) and (multiassetlocci.cinum=cinum)))) or ((location like 'UND%'))) and (((status = 'INPROG' or status = 'PENDIENTE' or status = 'ABIERTO' or status = 'ASIGNADO')))  
 
