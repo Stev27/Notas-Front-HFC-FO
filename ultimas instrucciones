@@ -1,2 +1,8 @@
 por favor los incidentes que llegan de FTTH con errores de creación se deben enviar a control de calidad, y se envía correo, se cancelaran unicamente por temas de instalaciones tambien con correo a Yoner
 revisar filtro de cable SABADOS DOMINGOS y FESTIVOS.
+
+
+Buenas noches, Frente a las OLT Corporativas se deben identificar cuales son las tarjetar con usuarios residenciales, Las tarjetas PFEK Son para usuarios netamente corporativos, las tarjetas GFGH Son para usuarios Pymes y Residencial, para identificar si es pymes o residencial de debe ingresar por consola y visializar  la marcacion del modulo de la troncal si esta marcada con nombre de una empresa pertenece al monitoreo del Noc Pyme y si tiene marcación de una troncal  Ejemp:"TK09" pertenece a residencial solo en estos casos enteraríamos a trabajarlos nosotros, tener en cuenta que lo que se esta realizando es el aprovechamiento de la Olt para compartir los servicios de FTT-X.
+Tener en cuenta: Para el ingreso a las consolas de estas OLT Corporativas se necesitan usuarios en Hendrix y hasta el momento no tenemos usuarios, adicional seria bueno tener una base de datos donde se especifiquen las troncales que usa Pymes y las que entraríamos a validar nosotros como residencial. 
+
+Por ultimo el incidente que se gestiono fue cancelado  justamente por que los puertos pertenecen a corporativo.
