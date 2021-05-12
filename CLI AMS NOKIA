@@ -1,0 +1,38 @@
+
+
+NAC-BOG.POLO-H1-7360>#show equipment ont optics | match exact:X/X/X/X / Potencias de ONT por puerto 
+NAC-BOG.POLO-H1-7360>#show equipment ont optics | match exact:1/1/1/13 
+1/1/1/13/1     -24.686         2.136           46.500          3.26        10300.0         -27.6           
+1/1/1/13/2     unknown         unknown         unknown         unknown     unknown         invalid         
+1/1/1/13/3     -19.430         2.006           40.102          3.26        9800.0          -21.1           
+1/1/1/13/4     unknown         unknown         unknown         unknown     unknown         invalid         
+1/1/1/13/5     -25.528         2.668           47.305          3.22        15100.0         -26.5           
+1/1/1/13/6     -20.862         2.552           42.199          3.22        12850.0         -24.1           
+1/1/1/13/7     unknown         unknown         unknown         unknown     unknown         invalid         
+1/1/1/13/8     -21.192         1.994           50.258          3.22        17200.0         -23.6           
+1/1/1/13/9     -19.956         1.956           40.859          3.18        13900.0         -20.3           
+1/1/1/13/10    -23.188         2.206           43.813          3.20        14650.0         -24.9           
+1/1/1/13/11    -31.548         2.546           41.125          3.22        13700.0         -33.7           
+1/1/1/13/12    -21.428         2.332           41.664          3.22        12600.0         -22.3           
+1/1/1/13/13    -22.442         2.060           43.813          3.22        13250.0         -22.3           
+1/1/1/13/14    -29.210         1.994           42.738          3.24        13450.0         -32.5           
+1/1/1/13/15    -21.192         2.434           49.719          3.22        16750.0         -21.7           
+NAC-BOG.POLO-H1-7360>#
+
+
+NAC-BOG.POLO-H1-7360>#show equipment ont interface | match exact:X/X/X/X / buscar seriales por puerto      
+NAC-BOG.POLO-H1-7360>#show equipment ont interface | match exact:1/1/1/5     
+1/1/1/5/1      3FE47555AEAA01 3FE47550BGBB77 2         3FE47555AEAA01 ALCL:B3A449A6 B3A449A6         CFGCOCL001  XMLCLACOL8  1.25g  
+1/1/1/5/2      3FE47555AEAA01 3FE47550BGBB77 2         3FE47555AEAA01 ALCL:B3A457D0 B3A457D0         CFGCOCL001  XMLCLACOL8  1.25g  
+1/1/1/5/3      3FE47555AEAA01 3FE47550BGBB77 2         3FE47555AEAA01 ALCL:B3A44844 B3A44844         CFGCOCL001  XMLCLACOL8  1.25g  
+1/1/1/5/4      3FE47555AEAA01 3FE47550BGBB77 2         3FE47555AEAA01 ALCL:B3A44835 B3A44835         CFGCOCL001  XMLCLACOL8  1.25g  
+1/1/1/5/5      3FE47555AEAA01 3FE47550BGBB77 2         3FE47555AEAA01 ALCL:B3A456F7 B3A456F7         CFGCOCL001  XMLCLACOL8  1.25g  
+1/1/1/5/6      V6.0.01        V6.0.20P1T40   4         V6.0.01        ZTEG:C8E27CF4 unknown                                  1.25g  
+NAC-BOG.POLO-H1-7360>#
+
+NAC-BOG.POLO-H1-7360>#show equipment ont interface | match exact:B3A449A6 // buscar por serial 
+1/1/1/5/1      3FE47555AEAA01 3FE47550BGBB77 2         3FE47555AEAA01 ALCL:B3A449A6 B3A449A6         CFGCOCL001  XMLCLACOL8  1.25g  
+NAC-BOG.POLO-H1-7360>#
+
+
+
