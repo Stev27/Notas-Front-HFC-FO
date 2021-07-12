@@ -2,6 +2,7 @@ show lacp internal
 show running-config-interface xgei-Xx/Xx/Xx   
 show interface brief 
 
+show optical-module-info xgei-1/11/3
 
 
 ////////////////////////
