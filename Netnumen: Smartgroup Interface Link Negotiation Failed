@@ -115,6 +115,60 @@ xgei-1/11/4    optical    Duplex/full  10000  down  down  down
 smartgroup1    N/A        N/A          1000   up    up    up    
 ZAC-CUN.VILL-B1-C600#
 
+/////////////////////////////////////////
+Comando para revisar potencia de xgei-/x/x/x, con ejemplo de OLT ZAC-CUN.MESA-B1-C600
+
+/////////////////////////////////////////
+
+show optical-module-info xgei-1/11/3
+
+
+ZAC-CUN.MESA-B1-C600#show optical-module-info xgei-1/11/3                                                                          
+Optical Module Position    : xgei-1/11/3
+Optical Module Power State : on
+Optical Module State       : online                                                                       
+--------------------------------------------------------------------------------
+Optical Module Manufacture Information:
+--------------------------------------------------------------------------------
+Vendor-Name    : H3S                      Product-Name   : H3S1022CDR-HW
+Sequence-Number: 1180524013               Version-Level  : 1.0
+Product-Date   : 180202                   
+Part-Number    : 
+Material-Number: 5a 54 45 57 ff ff ff ff 00 00
+                 00 00 00 00 00 00 33 00 00 00                    
+Register-Data  : 03 04 07 00 00 00 02 02 00 01 01 01 0d 00 0a 64
+                 00 00 00 00 48 33 53 20 20 20 20 20 20 20 20 20
+                 20 20 20 20 00 20 20 20 48 33 53 31 30 32 32 43
+                 44 52 2d 48 57 20 20 20 31 2e 30 20 05 1e 00 c8
+                 00 1a 00 00 31 31 38 30 35 32 34 30 31 33 20 20
+                 20 20 20 20 31 38 30 32 30 32 20 20 68 b0 01 59
+                 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+                 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+--------------------------------------------------------------------------------
+Optical Module Information:           
+--------------------------------------------------------------------------------
+Module-Type    : 1000BASE_LX         Supply-Vol     : 3.287(v)    [3.0, 3.6]
+Connector      : LC                  Temperature    : 60.000(c)   [-45.0, 90.0]
+Fiber-Type     : SM                  RxPower        : -7.028(dbm) [-19.0, -3.0]
+Trans-Distance : 10(km)
+                      
+--------------------------------------------------------------------------------
+Optical Transmitter Information:      
+--------------------------------------------------------------------------------
+Laser-Rate     : 13   (100Mb/s)      TxPower        : -5.944(dbm) [-11.0, -3.0]
+Wavelength     : 1310 (nm)           TxBias-Current : 12.232(mA)  [0.0, 131.0]                      
+--------------------------------------------------------------------------------
+Optical Module Alarm Threshold:       
+--------------------------------------------------------------------------------
+RxPower-Upper    : 3  (dbm)          RxPower-Lower    : -20(dbm)
+TxPower-Upper    : 9.000 (dbm)       TxPower-Lower    : -14.000(dbm)
+Bias-Upper       : 131(mA)           Bias-Lower       : 0(mA)
+Voltage-Upper    : 7  (v)            Voltage-Lower    : 0(v)
+Temperature-Upper: 90 (c)            Temperature-Lower: -45(c)
+Module-Class     : default                      
+ZAC-CUN.MESA-B1-C600#
+
+
 ////////////////////////////////////////
 ALARMA EN NETNUMEN 
 ////////////////////////////////////////
