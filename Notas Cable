@@ -1,0 +1,16 @@
+FOCABLE: MR_T1: Validacion NOC      
+
+ 
+
+No se observan problemas en configuración ni en comportamiento de cmts. Se solicita generar VT, realizar nuevamente pruebas tal y como se informa a continuación. 
+Se recuerda que las pruebas de deben realizarse:
+1. Sólo 1 pc conectado DIRECTAMENTE por cable al cm
+2. La red wifi debe estar deshabilitada
+3. Si la vel contratada es mayor a 100Mbps, en el PC se debe cambiar la configuración de velocidad de negociación de la tarjeta de red. a 1Gbps.
+4. Sólo se debe tener la ventana del test de velocidad abierta.
+5. Realizar prueba con otro pc.
+Si la falla continua favor comunicarse con el noc para realizar pruebas.
+
+ 
+
+Se adjunta documentacion de validacion 
