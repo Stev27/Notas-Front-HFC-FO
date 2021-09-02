@@ -1,0 +1,13 @@
+NAC-CUN.TABIO-B1-7360>#configure pon
+NAC-CUN.TABIO-B1-7360>configure>pon#
+NAC-CUN.TABIO-B1-7360>configure>pon#
+NAC-CUN.TABIO-B1-7360>configure>pon#info flat | match exact:"label"
+configure pon interface 1/1/1/1 label "TRK TB07 (PARQUE PRINCIPAL 2) UWZ8060" fec-dn enable tconts-per-frame 64
+configure pon interface 1/1/1/2 label "TRK TB08 (PARQUE PRINCIPAL 3) UWZ8061" fec-dn enable tconts-per-frame 64
+configure pon interface 1/1/1/3 label "TRK TB11 (PARQUE PRINCIPAL 4) UWZ8062" fec-dn enable tconts-per-frame 64
+configure pon interface 1/1/1/4 label "TRK TB12 (PARQUE PRINCIPAL 5) UWZ8063" fec-dn enable tconts-per-frame 64
+configure pon interface 1/1/1/5 label "TRK TB13 (PARQUE PRINCIPAL 6) UWZ8064" fec-dn enable tconts-per-frame 64
+configure pon interface 1/1/1/6 label "TRK TB14 (PARQUE PRINCIPAL 7) UWZ8065" fec-dn enable tconts-per-frame 64
+configure pon interface 1/1/1/7 label "TRK TB15 (PARQUE PRINCIPAL 8) UWZ8066" fec-dn enable tconts-per-frame 64
+configure pon interface 1/1/1/8 label "TRK TB16 (PARQUE PRINCIPAL 9) UWZ8067" fec-dn enable tconts-per-frame 64
+configure pon interface 1/1/1/9 label "TRK TB17 (PARQUE PRINCIPAL 10) UWZ8068" fec-dn enable tconts-per-frame 64
